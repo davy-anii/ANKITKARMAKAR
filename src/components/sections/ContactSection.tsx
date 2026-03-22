@@ -7,7 +7,7 @@ const socials = [
   {
     icon: <Mail size={18} />,
     label: "Email Me",
-    href: "https://mail.google.com/mail/?view=cm&fs=1&to=ankit06.karmakar@gmail.com",
+    href: "mailto:ankit06.karmakar@gmail.com",
     bg: "#FF70A6",
   },
   {
