@@ -20,8 +20,8 @@ export default function HeroSection() {
           transition={{ duration: 0.5 }}
           className="flex justify-center items-center lg:hidden w-full"
         >
-          <div className="relative w-fit">
-            <div className="absolute -bottom-2 -right-2 w-full h-full bg-black z-0" />
+          <div className="relative w-48 sm:w-60">
+            <div className="absolute -bottom-2 -right-2 w-48 h-52 sm:w-60 sm:h-[272px] bg-black z-0" />
             <div className="relative z-10 border-4 border-black overflow-hidden w-48 h-52 sm:w-60 sm:h-68">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
