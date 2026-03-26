@@ -1,16 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, Briefcase, Trophy, ShieldCheck } from "lucide-react";
+import { Eye, Briefcase, Trophy, ShieldCheck } from "lucide-react";
 
 export default function CVSection() {
   return (
     <section id="resume" className="py-20 sm:py-32 px-4 sm:px-6 relative bg-[#FBFF48] border-y-4 border-black overflow-hidden dot-bg">
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center lg:items-start justify-between">
-          
+
           {/* Left: Massive Typography / Pitch */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -21,30 +21,34 @@ export default function CVSection() {
               <span className="w-2 h-2 rounded-full bg-[#FF70A6] animate-pulse inline-block" />
               Interview Ready
             </div>
-            
+
             <h2 className="text-6xl sm:text-7xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] text-black mb-6">
               HIRE <br />
               <span className="text-transparent" style={{ WebkitTextStroke: '2px black' }}>ME.</span>
             </h2>
-            
+
             <p className="text-lg sm:text-xl font-bold border-l-4 border-black pl-4 mb-10 max-w-xl">
               I build scalable mobile apps, robust backends, and beautiful brutalist interfaces. Fast learner, hackathon veteran, and ready to ship production code.
             </p>
 
-            <a
-              href="https://i.postimg.cc/8kv0vCMP/ANKIT-KARMAKAR-(CV-).png"
-              target="_blank"
-              rel="noopener noreferrer"
-              download="Ankit_Karmakar_CV.png"
-              data-cursor-color="#FF70A6"
-              className="cursor-target inline-flex items-center justify-center gap-3 px-8 py-5 bg-[#FF70A6] text-black font-black text-lg sm:text-xl uppercase border-4 border-black hard-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all w-full sm:w-auto"
-            >
-              <Download size={24} strokeWidth={3} /> Download Resume
-            </a>
+            <div className="flex flex-col md:flex-row gap-6">
+
+
+
+              <a
+                href="https://drive.google.com/file/d/1DZe9Ge0atHmgjULkQw3OkNeCRk1qok6d/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor-color="#FF70A6"
+                className="cursor-target inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-black font-black text-xl uppercase border-4 border-black shadow-hard hover:bg-neo-pink hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all w-full sm:w-auto"
+              >
+                <Eye size={24} strokeWidth={3} /> VIEW CV
+              </a>
+            </div>
           </motion.div>
 
           {/* Right: Quick Stats / TL;DR for Recruiters */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -55,11 +59,11 @@ export default function CVSection() {
               <div className="absolute -top-5 -right-5 bg-[#33FF57] border-2 border-black px-4 py-2 font-black text-sm uppercase transform rotate-6 hard-shadow-sm">
                 TL;DR
               </div>
-              
+
               <h3 className="text-2xl font-black uppercase mb-8 border-b-4 border-black pb-4">
                 The 30-Second Pitch
               </h3>
-              
+
               <ul className="space-y-6">
                 <li className="flex gap-4 items-start">
                   <div className="bg-black text-[#FBFF48] p-2 mt-1">
@@ -70,7 +74,7 @@ export default function CVSection() {
                     <p className="text-sm font-semibold opacity-80">React, React Native, Next.js, Node.js, Firebase, MongoDB.</p>
                   </div>
                 </li>
-                
+
                 <li className="flex gap-4 items-start">
                   <div className="bg-black text-[#FF70A6] p-2 mt-1">
                     <Trophy size={20} />
@@ -80,7 +84,7 @@ export default function CVSection() {
                     <p className="text-sm font-semibold opacity-80">Proven ability to build MVPs, work under pressure, and deliver results in 24 hours.</p>
                   </div>
                 </li>
-                
+
                 <li className="flex gap-4 items-start">
                   <div className="bg-black text-[#33FF57] p-2 mt-1">
                     <ShieldCheck size={20} />

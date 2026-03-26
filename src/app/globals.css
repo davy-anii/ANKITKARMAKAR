@@ -24,6 +24,10 @@ body {
   box-shadow: 4px 4px 0px 0px #000000;
 }
 
+@utility shadow-hard {
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
 @utility hard-shadow-sm {
   box-shadow: 2px 2px 0px 0px #000000;
 }

@@ -53,6 +53,40 @@ export default function ExperienceSection() {
               ))}
             </ul>
           </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            data-cursor-color="#FBFF48"
+            className="cursor-target border-4 border-black hard-shadow-lg bg-white hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none transition-all mt-6 sm:mt-8"
+          >
+            {/* Header bar */}
+            <div className="border-b-4 border-black bg-black text-white px-4 sm:px-6 py-3 sm:py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+              <div>
+                <h3 className="text-lg sm:text-xl font-black uppercase">Tech Team Member</h3>
+                <p className="text-[#FBFF48] font-bold text-xs sm:text-sm mt-0.5">@ RCCIIT ACM Student Chapter</p>
+              </div>
+              <span className="border-2 border-[#FBFF48] text-[#FBFF48] px-3 py-1 text-xs font-black uppercase tracking-wider w-fit">
+                Present
+              </span>
+            </div>
+
+            {/* Responsibilities */}
+            <ul className="p-4 sm:p-6 space-y-3 sm:space-y-4">
+              {[
+                "Building and maintaining technical projects and tools for the ACM student community.",
+                "Collaborating with peers to organise tech events, workshops, and hackathons.",
+                "Contributing to open-source initiatives and knowledge-sharing within the chapter.",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-2 sm:gap-3 text-xs sm:text-sm leading-relaxed">
+                  <ChevronRight size={16} className="shrink-0 mt-0.5 text-black" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
         </motion.div>
       </div>
     </section>
